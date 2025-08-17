@@ -1,0 +1,1 @@
+<h2>Новая заявка MIO</h2><p><strong>Имя:</strong> {{ $data['name'] }}</p><p><strong>Контакт:</strong> {{ $data['contact'] }}</p><p><strong>Комментарий:</strong> {{ $data['note'] ?? '—' }}</p>

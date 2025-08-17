@@ -1,0 +1,26 @@
+
+:root{--bg:#0e0e0e;--gold:#d4af37;--text:#f2e8c9;--muted:#bda46a}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Arial}
+a{color:var(--gold);text-decoration:none}
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
+.header{position:sticky;top:0;z-index:50;background:rgba(14,14,14,.8);backdrop-filter:blur(6px);border-bottom:1px solid rgba(212,175,55,.15)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.brand{display:flex;gap:10px;align-items:center}.brand img{height:28px}.brand span{font-family:Cinzel,Georgia,serif;color:var(--gold);letter-spacing:.2em}
+.btn{display:inline-block;padding:12px 20px;border:1px solid var(--gold);color:var(--gold);border-radius:999px;transition:.25s;background:transparent}
+.btn:hover{transform:translateY(-1px);box-shadow:0 10px 30px rgba(212,175,55,.15)}
+.hero{position:relative;min-height:64vh;display:grid;place-items:center;text-align:center;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:url('/assets/img/hero.jpg') center/cover no-repeat;opacity:.35}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.7),rgba(0,0,0,.7))}
+.hero .inner{position:relative;z-index:1;padding:60px 20px}
+h1,h2{font-family:Cinzel,Georgia,serif;color:var(--gold);letter-spacing:.06em;margin:0 0 16px}
+.lead{max-width:720px;margin:0 auto;color:#e9dcb7}
+.section{padding:60px 0;border-top:1px solid rgba(212,175,55,.12)}
+.card{background:rgba(255,255,255,.02);border:1px solid rgba(212,175,55,.15);border-radius:18px;padding:28px}
+.grid{display:grid;gap:24px;grid-template-columns:repeat(12,1fr)}.col-6{grid-column:span 6}.col-12{grid-column:span 12}
+.bullets{display:grid;gap:12px}.bullets li{list-style:none;position:relative;padding-left:18px}.bullets li::before{content:"•";position:absolute;left:0;color:var(--gold)}
+.small{color:#cfbd8c}.alert{padding:12px 16px;border:1px solid rgba(212,175,55,.35);border-radius:12px;background:rgba(34,34,34,.6);color:#eeddaf;margin-bottom:16px}
+.price .row{display:flex;justify-content:space-between;border-bottom:1px dashed rgba(212,175,55,.25);padding:10px 0}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 20px}
+.select,.search{padding:10px 12px;border-radius:10px;border:1px solid rgba(212,175,55,.25);background:#111;color:#f5e9c9}
+.table{width:100%;border-collapse:collapse}.table th,.table td{padding:12px;border-bottom:1px solid rgba(212,175,55,.12)}.table th{color:#eeddaf;text-align:left}
+@media(max-width:900px){.col-6{grid-column:span 12}}
